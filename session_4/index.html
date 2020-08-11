@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // const li1 = React.createElement('li',null,'Go to market')
+        // const li2 = React.createElement('li',null,'Buy food')
+        // const li3 = React.createElement('li',null,'Make dinner')
+
+        // const ul = React.createElement('ul',null,li1,li2,li3)
+        const ul = <ul><li>Go to market</li><li>Buy food</li><li>Make dinner</li></ul>
+
+        const root = document.getElementById('root');
+        ReactDOM.render(ul,root)
+    </script>
+</body>
+</html>
