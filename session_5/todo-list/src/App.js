@@ -1,15 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import LoginForm from './components/LoginForm'
+
 
 function App() {
   return (
     <div className="App">
-      <ul>
-        <li>Di Cho</li>
-        <li>Nau Com</li>
-        <li>Rua Bat</li>
-      </ul>
+      <Header />
+      <LoginForm />
     </div>
   );
 }
